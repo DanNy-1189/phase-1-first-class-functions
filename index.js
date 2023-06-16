@@ -1,16 +1,14 @@
-function receivesAFunction(callback) {
-    return callback();
+function receivesAFunction (cb) {
+    return cb()
 }
+receivesAFunction()
 
-function returnsANamedFunction() {
-    return function name() {
-        console.log();
+function returnsANamedFunction () {
+    return function name () {
     }
 }
 
-function returnsAnAnonymousFunction() {
+function returnsAnAnonymousFunction () {
     return function () {
-        console.log();
     }
-};
-
+}
